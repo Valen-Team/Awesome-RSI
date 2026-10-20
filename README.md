@@ -6,10 +6,12 @@
 
 **Recursive Self-Improvement · From Experience to Systems to Models**
 
-A curated collection of research and tools for AI systems that learn from experience, improve their own systems, and update their models.
+Papers, code, benchmarks, and models for AI systems that retain experience, revise their agent software, or learn through weight updates.
+
+[English](README.md) · [简体中文](README.zh-CN.md)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Updated](https://img.shields.io/badge/Updated-2026--09--11-2563eb?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026--10--20-2563eb?style=flat-square)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-16a34a?style=flat-square)](#contributing)
 
 [📄 Papers](#papers) · [🛠️ Projects](#projects) · [📊 Benchmarks, Evaluation & Datasets](#benchmarks)
@@ -18,9 +20,9 @@ A curated collection of research and tools for AI systems that learn from experi
 
 </div>
 
-> 📣 **Share your research!** Have a relevant paper, project, benchmark, dataset, or model—including your own work? Open an **Issue** or submit a **Pull Request**. Contributions and corrections are welcome!
+Have a paper, project, benchmark, dataset, or model to suggest? Open an Issue or Pull Request. Submissions from authors are welcome.
 
-We prioritize **relevance, clear technical contributions, and useful public resources**, with recent work listed first. Dates refer to first publication unless a release or update is explicitly indicated.
+Entries focus on what changes, what feedback drives the change, and what evidence supports it. Dates refer to first publication unless a release or update is explicitly indicated.
 
 ---
 
@@ -43,6 +45,8 @@ Improvement through reusable prompts, context, skills, and memory.
 
 | Date | Paper | Core idea | Resources |
 |---|---|---|---|
+| 2026-10-13 | [EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](https://arxiv.org/abs/2610.18867) | Distills robot interaction into code skills and written lessons, then freezes them for fresh agents in unseen scenes; model weights stay fixed. | [💻 Code](https://github.com/Einsia/EmbodiedEvo) |
+| 2026-09-08 | [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](https://arxiv.org/abs/2609.08228) | Updates skill-graph topology, edge weights, and retrieval descriptions from execution traces while keeping the model, skill content, and retrieval algorithm fixed. | 📄 Paper |
 | 2026-08-25 | [Recuris: Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](https://arxiv.org/abs/2608.24876) | Evolves working memory and experiential skills using verified state and structured failure feedback; the base LLM and outer meta-agent stay fixed. | [💻 Code](https://github.com/Gen-Verse/Recuris) |
 | 2026-08-15 | [Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents](https://arxiv.org/abs/2608.15071) | Compiles execution contexts into reusable cross-task and task-type skills around a frozen solver. | [💻 Code & skills](https://github.com/A-EVO-Lab/a-evolve/tree/release/evo-harness) |
 | 2026-03-19 | [Memento-Skills: Let Agents Design Agents](https://arxiv.org/abs/2603.18743) | Grows reusable Markdown skills through reflective learning, with a frozen backbone and a learned skill router. | [💻 Code](https://github.com/Memento-Teams/Memento-Skills) |
@@ -58,6 +62,10 @@ Improvement through changes to agent harnesses, tools, executable code, and the 
 
 | Date | Paper | Core idea | Resources |
 |---|---|---|---|
+| 2026-10-15 | [MetaShare: Failure-Aware Collective Self-Improvement for Open-Ended Agents](https://arxiv.org/abs/2610.21887) | Shares successful and failed modifications with signed performance changes across agent lineages; a task-blind auditor suggests underexplored strategy categories. | 📄 Paper |
+| 2026-10-09 | [Harness²: Recursive Agent Harnessing for an Open World](https://arxiv.org/abs/2610.14224) | Proposes and probes harness edits on the current task, then reuses lessons to revise the improvement harness for later tasks; weights stay fixed. | [💻 Code](https://github.com/google-research/harness2) |
+| 2026-09-29 | [SelfSearch: Reward-Free Search for Self-Improving Agents](https://arxiv.org/abs/2609.37968) | Uses records of earlier self-modification attempts to revise instructions, tools, and execution procedures without downstream reward signals during search. | 📄 Paper |
+| 2026-09-17 | [SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness](https://arxiv.org/abs/2609.20519) | Searches harness revisions for token efficiency; the released Pi extension implements selected changes to tool execution, observations, context, and delegated reading. | [💻 Code](https://github.com/NVlabs/SoL-Pi) |
 | 2026-08-25 | [Metaⁿ: Recursive Self-Improvement through Emergent Depth](https://arxiv.org/abs/2608.24735) | Builds stacks of executable improvement layers from code and traces by repeatedly applying a fixed meta-operation. | [💻 Code](https://github.com/minnesotanlp/meta-n) |
 | 2026-08-07 | [Mendel Gödel Machine: Recursive Self-Improving Coding Agents via Comparative Evolution](https://arxiv.org/abs/2608.07645) | Evolves coding agents through cross-task comparison and cross-lineage hybridization. | [💻 Code](https://github.com/RealLcz/MGM) |
 | 2026-07-17 | [Recursive Harness Self-Improvement](https://arxiv.org/abs/2607.15524) | Improves prompt-level agent-loop specifications using feedback on previous harness revisions. | 📄 Paper |
@@ -78,6 +86,11 @@ Improvement through weight updates, including self-generated training data, evol
 
 | Date | Paper | Core idea | Resources |
 |---|---|---|---|
+| 2026-10-16 | [Self-Evolving Coding Agents via Harness-Policy Optimization](https://arxiv.org/abs/2610.22791) | Self-HPO alternates policy-proposed harness search with RL under the selected harness; training failures guide the next search round. | 📄 Paper |
+| 2026-10-08 | [Recursive Self-Improvement through Multi-Agent Self-Supervision](https://arxiv.org/abs/2610.12176) | MASS alternates self-evaluated workflow search with supervised training on the resulting multi-agent trajectories; the updated model participates in the next cycle. | 📄 Paper |
+| 2026-10-02 | [Recursive Self-Improvement in Unified Multimodal Models](https://arxiv.org/abs/2610.03002) | Uses executable programs to verify generated chart data, then trains image generation, visual understanding, and program writing across successive rounds. | 📄 Paper |
+| 2026-10-01 | [Harness Annealing: Learning to Act with Less External Control](https://arxiv.org/abs/2610.01235) | Trains control decisions from teacher trajectories collected under progressively weaker harnesses; reduced runtime support is tested separately for each checkpoint. | 📄 Paper |
+| 2026-09-15 | [ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents](https://arxiv.org/abs/2609.17523) | Alternates harness evolution with model RL. Public experiments use a frozen task release and verifier-assisted feedback; the hosted workspace is a separate demonstration. | [💻 Research code](https://github.com/Gen-Verse/ScienceBuddy) |
 | 2026-09-02 | [SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment](https://arxiv.org/abs/2609.02786) | Co-evolves safety prompts and skill banks with SFT and GRPO policy updates. | [💻 Code](https://github.com/MaoPopovich/SafeEvolve) |
 | 2026-09-02 | [APEx: Distillation of Agent Procedural Experience for Adaptive Deep Research Question Answering](https://arxiv.org/abs/2609.02253) | Distills procedural experience into skills while training executor, distiller, and planner roles; includes test-time planner adaptation. | [💻 Code](https://github.com/J-Ding519/APEx) |
 | 2026-08-25 | [CAFE: Self-Improving Search Agents Need Co-Evolving Feedback](https://arxiv.org/abs/2608.24794) | Co-trains search-agent and critic roles through online RL and feedback preference optimization. | 📄 Paper |
@@ -106,6 +119,8 @@ Selected implementations and frameworks for building self-improving agents and a
 
 | Reference date | Project | Stars | What to explore |
 |---|---|---|---|
+| 2026-10-13, paper | [EmbodiedEvo](https://github.com/Einsia/EmbodiedEvo) | ![Stars](https://img.shields.io/github/stars/Einsia/EmbodiedEvo?style=flat-square) | Robot-control code, reusable skills and lessons, and separate practice/test scenes; simulator setup is required. |
+| 2026-09-15, paper | [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/ScienceBuddy?style=flat-square) | Simplified scientific-agent experiments alternating harness search and GRPO; the hosted product source is not included. |
 | 2026-09-02 | [SafeEvolve](https://github.com/MaoPopovich/SafeEvolve) | ![Stars](https://img.shields.io/github/stars/MaoPopovich/SafeEvolve?style=flat-square) | Safety-harness and policy co-evolution; training scripts and compact assets. |
 | 2026-08-25 | [Metaⁿ](https://github.com/minnesotanlp/meta-n) | ![Stars](https://img.shields.io/github/stars/minnesotanlp/meta-n?style=flat-square) | Executable meta-improvement layers and a research CLI. |
 | 2026-08-25 | [Recuris](https://github.com/Gen-Verse/Recuris) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/Recuris?style=flat-square) | Working memory, experiential skills, and bounded memory evolution. |
@@ -120,7 +135,9 @@ Selected implementations and frameworks for building self-improving agents and a
 
 | Reference date | Project | Stars | What to explore |
 |---|---|---|---|
+| 2026-10-09, paper | [Harness²](https://github.com/google-research/harness2) | ![Stars](https://img.shields.io/github/stars/google-research/harness2?style=flat-square) | Task-level harness edits and a reusable improvement harness, with professional-task evaluation scripts. |
 | 2026-09-18, software release | [Gear](https://github.com/rsi-gear/gear) | ![Stars](https://img.shields.io/github/stars/rsi-gear/gear?style=flat-square) | Uses execution traces and benchmark feedback to optimize agent prompts, tools, and workflows, retaining versioned harnesses across rounds. |
+| 2026-09-17, paper | [SoL-Pi](https://github.com/NVlabs/SoL-Pi) | ![Stars](https://img.shields.io/github/stars/NVlabs/SoL-Pi?style=flat-square) | Pi extension with selected efficiency mechanisms from automated harness search; includes configuration and evidence-preserving log handling. |
 | 2026-08-28 | [Automated Alignment Researcher](https://github.com/YuehHanChen/automated_alignment_researcher) | ![Stars](https://img.shields.io/github/stars/YuehHanChen/automated_alignment_researcher?style=flat-square) | Alignment-research harness, evaluation, and monitoring; connects to a user-supplied trainer. |
 | 2026-08-11 | [ComfyResearch](https://github.com/MetaCircleAI/ComfyResearch) | ![Stars](https://img.shields.io/github/stars/MetaCircleAI/ComfyResearch?style=flat-square) | Graph-native experiment workbench for inspecting and modifying learning experiments. |
 | 2026-05-19, extension paper | [GEPA / optimize_anything](https://github.com/gepa-ai/gepa) | ![Stars](https://img.shields.io/github/stars/gepa-ai/gepa?style=flat-square) | Reflective optimization of prompts, code, configurations, and agent architectures; [2026 paper](https://arxiv.org/abs/2605.19633). |
@@ -162,6 +179,7 @@ Both provide evidence relevant to RSI. Establishing **recursive** improvement al
 
 | Date | Resource | Evaluation focus | Links |
 |---|---|---|---|
+| 2026-10-09 | **MC-EvoBench** | Minecraft capability chains with world resets, declared transferable artifacts, and matched source-experience controls; the reported agents show no stable transfer from related experience. | [Paper](https://arxiv.org/abs/2610.13829) · [Code & tasks](https://github.com/xzw-ustc/mc-bench-open-source) |
 | 2026-08-20 | **AI4AI-Bench** | Training-algorithm redesign across ten research repositories with four-hour exploration and sealed reruns. | [Paper](https://arxiv.org/abs/2608.20318) · [Code](https://github.com/Einsia/AI4AI-Bench) |
 | 2026-08, report | **CurateBench** | Data selection, synthesis, and mixing under a fixed training recipe; tests whether one trained model improves across math, coding, and tool use. | [Report](https://www.datologyai.com/blog/datasmith) |
 | 2026-08-04 | **ContinualSkillBench** | Construction, maintenance, and reuse of skill libraries across 500 sequential subtasks in five domains; examines skill retention and transfer. | [Paper](https://arxiv.org/abs/2608.03874) · [Code & tasks](https://github.com/gtynnn060110-hash/continual-skill-bench-final) |
@@ -177,6 +195,7 @@ Both provide evidence relevant to RSI. Establishing **recursive** improvement al
 
 | Date | Resource | Evaluation focus | Links |
 |---|---|---|---|
+| 2026-09-17, paper | **EdgeBench** | The SoL-Pi paper's 51-task evaluation of agent performance and token efficiency; compare task outcomes and cost under the same model settings. | [Paper](https://arxiv.org/abs/2609.20519) · [Project](https://nvlabs.github.io/SoL-Pi/) |
 | 2026-09-01, project | **PPTBench (Einsia)** | Reconstructing 500 scientific diagrams as editable PowerPoint slides; evaluates semantic fidelity, native editability, and visual structure. | [Website & tasks](https://lab.einsia.ai/pptbench/) |
 | 2026-08-26, project | **RSI-Exam** | Improving methods from weak baselines across 88 tasks in six domains, then testing on hidden data; includes AI memory/harness tasks alongside scientific and professional tasks. | [Website](https://rsi-exam.ai/) · [Code](https://github.com/aiming-lab/RSI-Exam) · [Data](https://huggingface.co/datasets/RSI-Exam/RSI-Exam) |
 | 2026-08-18, paper | **ASI-Bench** | Project-level scientific research across 60 tasks and 11 domains, with progressively reduced methodological guidance. | [Paper](https://arxiv.org/abs/2608.17271) · [Code](https://github.com/apexin-ai/ASI-Bench) · [Leaderboard](https://asibench.apexin.ai/) |
@@ -208,6 +227,8 @@ These provide task-level evaluation inside or after an improvement loop.
 
 | Date | Study | Practical takeaway |
 |---|---|---|
+| 2026-10-10 | [Does Failure Feedback Direct Agent Self-Modification?](https://arxiv.org/abs/2610.14662) | Measure repair of the targeted failure, transfer to other failures, and held-out net change separately; target repair did not reliably predict held-out gains. |
+| 2026-09-29 | [Harness Evolution as Learning: Approximation, Generalization, and Optimization Limits of Self-Improving Personal Agents](https://arxiv.org/abs/2609.36892) | Studies harness architecture, scale, and update algorithms through preference-oriented evaluation and analyses of approximation, generalization, and optimization error. |
 | 2026-08-20 | [Phantom Gains: Auditing Self-Improvement Against a Measured Null](https://arxiv.org/abs/2608.20290) | Use frozen controls and repeated measurements to separate learning from apparent gains. [Code](https://github.com/chengxuphd/phantom-gains). |
 | 2026-08-18 | [On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification](https://arxiv.org/abs/2608.18066) | Check multiple seeds, task orders, and feedback specifications when evaluating memory-based agents. [Code](https://github.com/SalesforceAIResearch/self-improve-fragility) · [Trajectories](https://huggingface.co/datasets/Salesforce/self-improve-fragility). |
 
@@ -215,6 +236,7 @@ These provide task-level evaluation inside or after an improvement loop.
 
 | Reference date | Resource | What it provides |
 |---|---|---|
+| 2026-09-16, paper | [ScienceIDE](https://github.com/aitofound/ScienceIDE) | Converts scientific repositories into executable tasks with expert-defined acceptance criteria, supporting trajectory collection, training, and evaluation. [Paper](https://arxiv.org/abs/2609.19134). |
 | 2026-08-20, full release | [SPADE environment corpora](https://huggingface.co/collections/spade-rl/spade) | Executable game and tool-use environments, grounding corpora, and self-play artifacts; [static game corpus](https://huggingface.co/datasets/spade-rl/SPADE-Environment-Pool-GPT5.5-Games). |
 | 2026-06-23, paper | [OpenThoughts-Agent](https://github.com/open-thoughts/OpenThoughts-Agent) | Agent-training datasets, curation pipelines, experiment records, and model checkpoints. |
 | 2026-01-23, paper | [Endless Terminals](https://github.com/kanishkg/endless-terminals) | Procedurally generated containerized terminal-training environments and verification pipelines. |
@@ -232,6 +254,7 @@ Downloadable models associated with self-improvement methods or research-agent s
 
 | Weight release | Model / family | Base model | Connection to self-improvement | Checkpoints |
 |---|---|---|---|---|
+| 2026-09-17, announcement | **PhAI-IDE, 4B / 9B / 72B** | Qwen3.5-4B / 9B; Qwen2.5-72B-Instruct | SFT on verified scientific-tool trajectories from ScienceIDE; provides task models for scientific-agent research. | [🤗 Weights](https://huggingface.co/collections/AItonomy/scienceide-model-series) · [Model cards](https://huggingface.co/AItonomy/PhAI-IDE-4B) |
 | 2026-08-24 | **Apodex-1.1-mini** | Qwen3.5-35B-A3B | Agentic post-training for long-horizon execution and research, within a managed model–system improvement loop. | [🤗 Weights](https://huggingface.co/apodex/Apodex-1.1-mini) · [Collection](https://huggingface.co/collections/apodex/apodex-11) |
 | 2026-08-20 | **SPADE** | Qwen3, 4B / 8B / 30B-A3B | Shared-policy self-play between environment design and agent reasoning. | [🤗 Collection](https://huggingface.co/collections/spade-rl/spade-checkpoints) |
 | 2026-07-23 | **AREX-Base / Turbo** | Qwen3.5-122B-A10B / 4B | Research-agent training and iterative evidence/answer refinement. | [🤗 Base](https://huggingface.co/BAAI/AREX-Base) · [Turbo](https://huggingface.co/BAAI/AREX-Turbo) |
@@ -247,6 +270,8 @@ Downloadable models associated with self-improvement methods or research-agent s
 
 | Date | Survey | Reading focus |
 |---|---|---|
+| 2026-09-30 | [Recursive Self-Improvement in AI: A Survey](https://www.preprints.org/manuscript/202609.2680) | Connects update targets, feedback, inheritance, and external control; examines evidence for retained gains and improved update procedures. |
+| 2026-09-08 | [Safety in Self-Evolving Agents: A Survey](https://arxiv.org/abs/2610.00093) | Tracks how updates to memory, skills, tools, and weights change safety properties, including repair of inherited failures and evaluation after adaptation resumes. |
 | 2026-09-01 | [A Survey on Self-Improving Test-Time Intelligence: Feedback-Driven Adapting, Learning, and Scaling at Inference](https://arxiv.org/abs/2609.01679) | Feedback-driven adaptation, learning, and scaling at inference time. |
 | 2026-08-03 | [The Path to Recursive Self-Improving Agents: Foundation, Framework, and Future Directions](https://www.preprints.org/manuscript/202608.0051) | Foundation models, harnesses, data, trainers, and improvement mechanisms. [Companion list](https://github.com/D2I-ai/awesome-recursive-self-improving-agents). |
 | 2026-07-14 | [Self-Improvements in Modern Agentic Systems: A Survey](https://arxiv.org/abs/2607.13104) | Persistent improvement of model parameters and operational scaffolds. [Companion list](https://github.com/selfimproving-agent/awesome-Self-Improving-Agents). |
@@ -266,6 +291,9 @@ Organizations with public work on self-improvement or automated AI R&D. Dates ma
 
 | Public milestone | Organization | Technical direction | Public resources |
 |---|---|---|---|
+| 2026-10-09, Harness² paper | [**Google DeepMind / Google Research**](https://arxiv.org/abs/2610.14224) | Agent-harness adaptation, program evolution, and algorithm discovery. | [Harness² code](https://github.com/google-research/harness2) · [AlphaEvolve result artifacts](https://github.com/google-deepmind/alphaevolve_results) · [FunSearch code](https://github.com/google-deepmind/funsearch). |
+| 2026-09-17, SoL-Pi paper | [**NVIDIA / NVlabs and collaborators**](https://arxiv.org/abs/2609.20519) | Automated harness search for efficient long-running agents. | [SoL-Pi extension](https://github.com/NVlabs/SoL-Pi) · [Technical description](https://nvlabs.github.io/SoL-Pi/). |
+| 2026-09-16, ScienceIDE paper | [**PhAI Labs and collaborators**](https://phai-labs.com/en/papers/sciencebuddy/) | Scientific-agent harness/model learning and executable scientific environments. | [ScienceBuddy research code](https://github.com/Gen-Verse/ScienceBuddy) · [ScienceIDE](https://github.com/aitofound/ScienceIDE) · [PhAI-IDE weights](https://huggingface.co/collections/AItonomy/scienceide-model-series). |
 | 2026-09-06, benchmark update | [**Apex Intelligence / 超衍智能**](https://www.apexin.ai/) — 陈勇超 / Yongchao Chen | Self-evolving AI and scientific research. | [Research report](https://github.com/apexin-ai/apex-research-report) · [ASI-Bench](https://github.com/apexin-ai/ASI-Bench). |
 | 2026-09-03 | [**Adaption Labs**](https://adaptionlabs.ai/blog/introducing-invent-a-dataset) | Goal-driven data generation and automated training-recipe search. | Hosted [AutoScientist](https://adaptionlabs.ai/blog/autoscientist-api), with downloadable adapted models. |
 | 2026-09-02, research artifacts | [**iGent AI**](https://igent.ai/) | Self-modifying coding agents and AI-assisted research. | [SICA code](https://github.com/MaximeRobeyns/self_improving_coding_agent) · [Maestro research artifacts](https://github.com/iGentAI/factorlab). |
@@ -276,7 +304,6 @@ Organizations with public work on self-improvement or automated AI R&D. Dates ma
 | 2026-07 | [**Tencent Hunyuan / 腾讯混元**](https://hy.tencent.com/research/hyra) | Long-horizon AI research across training, kernels, mathematics, and engineering. | [Hyra research artifacts](https://github.com/Tencent-Hunyuan/hyra-results); full researcher not released. |
 | 2026-07-17, RHI paper | [**Sakana AI / RSI Lab**](https://sakana.ai/rsi-lab/) | Open-ended evolution, harness self-improvement, algorithm discovery, and automated science. | [DGM](https://github.com/jennyzzt/dgm) · [RHI](https://arxiv.org/abs/2607.15524) · [ShinkaEvolve](https://github.com/SakanaAI/ShinkaEvolve) · [AI Scientist v2](https://github.com/SakanaAI/AI-Scientist-v2). |
 | 2026-06-11 | [**Recursive Superintelligence**](https://www.recursive.com/articles/first-steps-toward-automated-ai-research) | Automated optimization of model-training methods and GPU kernels. | [NanoChat, NanoGPT, and SOL artifacts](https://github.com/recursive-org/first-steps-toward-automated-ai-research); full researcher not released. |
-| 2026-05-07, update | [**Google DeepMind**](https://deepmind.google/blog/alphaevolve-impact/) | Executable program evolution and scientific/algorithmic discovery. | [AlphaEvolve result artifacts](https://github.com/google-deepmind/alphaevolve_results) · [FunSearch code](https://github.com/google-deepmind/funsearch). |
 | 2026-03-19, paper | [**Meta / FAIR and collaborators**](https://arxiv.org/abs/2603.19461) | Joint task-agent and meta-agent self-modification. | [Hyperagents code and logs](https://github.com/facebookresearch/Hyperagents). |
 | 2025-11-19, model release | [**Deep Cogito**](https://www.deepcogito.com/research/cogito-v2-1) | Iterated Distillation and Amplification. | [Cogito model weights](https://huggingface.co/deepcogito/models); full IDA training pipeline not released. |
 
@@ -310,13 +337,11 @@ These organizations have announced relevant directions; released technical syste
 
 **🤝 Contribute your work**
 
-Open an **Issue** or **Pull Request** with the resource name, first public date, primary link, and one sentence explaining its contribution. For papers, suggest **Experience**, **Systems**, or **Parameters**; for projects and models, link the available code, weights, or data.
+Open an Issue or Pull Request with the resource name, first public date, primary link, and one sentence explaining its contribution. For papers, suggest Experience, Systems, or Parameters; for projects and models, link the available code, weights, or data.
 
-We favor relevant, technically clear entries over a longer list. Author submissions, reproducibility resources, new releases, and corrections are all welcome.
+Include enough detail to tell what the system updates and how it is evaluated. Reproduction materials, new releases, and corrections are welcome.
 
 <div align="center">
-
-**Build · Evaluate · Improve · Share**
 
 [↑ Back to top](#awesome-rsi)
 
