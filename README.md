@@ -136,6 +136,7 @@ Selected implementations and frameworks for building self-improving agents and a
 - [Harbor](https://github.com/harbor-framework/harbor) — containerized agent tasks, verifiers, evaluation, and RL rollouts.
 - [ART](https://github.com/OpenPipe/ART) — agent reinforcement learning from scored trajectories.
 - [verl](https://github.com/verl-project/verl) — distributed training for custom rollout, reward, and policy-update loops.
+- [Reef](https://github.com/Human-Agent-Society/reef) — serving endpoint that records interactions, matches later feedback to them, and publishes versioned weight or harness updates to live traffic.
 
 </details>
 
