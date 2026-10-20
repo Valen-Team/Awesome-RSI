@@ -120,6 +120,7 @@ Selected implementations and frameworks for building self-improving agents and a
 
 | Reference date | Project | Stars | What to explore |
 |---|---|---|---|
+| 2026-09-18, software release | [Gear](https://github.com/rsi-gear/gear) | ![Stars](https://img.shields.io/github/stars/rsi-gear/gear?style=flat-square) | Uses execution traces and benchmark feedback to optimize agent prompts, tools, and workflows, retaining versioned harnesses across rounds. |
 | 2026-08-28 | [Automated Alignment Researcher](https://github.com/YuehHanChen/automated_alignment_researcher) | ![Stars](https://img.shields.io/github/stars/YuehHanChen/automated_alignment_researcher?style=flat-square) | Alignment-research harness, evaluation, and monitoring; connects to a user-supplied trainer. |
 | 2026-08-11 | [ComfyResearch](https://github.com/MetaCircleAI/ComfyResearch) | ![Stars](https://img.shields.io/github/stars/MetaCircleAI/ComfyResearch?style=flat-square) | Graph-native experiment workbench for inspecting and modifying learning experiments. |
 | 2026-05-19, extension paper | [GEPA / optimize_anything](https://github.com/gepa-ai/gepa) | ![Stars](https://img.shields.io/github/stars/gepa-ai/gepa?style=flat-square) | Reflective optimization of prompts, code, configurations, and agent architectures; [2026 paper](https://arxiv.org/abs/2605.19633). |
