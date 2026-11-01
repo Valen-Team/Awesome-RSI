@@ -119,6 +119,7 @@ Selected implementations and frameworks for building self-improving agents and a
 
 | Reference date | Project | Stars | What to explore |
 |---|---|---|---|
+| 2026-10-31, v0.2.4 release | [agent-qa](https://vostride.com) | ![Stars](https://img.shields.io/github/stars/vostride/agent-qa?style=flat-square) | Retains evidence-gated memidex facts and procedures for later web/mobile tests; local promotion and optional replay/canary checks. [Code](https://github.com/vostride/agent-qa) · [Learning loop](https://vostride.com/docs/agent-qa/self-improvement); FSL-1.1-ALv2, no model training or code rewriting. |
 | 2026-10-13, paper | [EmbodiedEvo](https://github.com/Einsia/EmbodiedEvo) | ![Stars](https://img.shields.io/github/stars/Einsia/EmbodiedEvo?style=flat-square) | Robot-control code, reusable skills and lessons, and separate practice/test scenes; simulator setup is required. |
 | 2026-09-15, paper | [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/ScienceBuddy?style=flat-square) | Simplified scientific-agent experiments alternating harness search and GRPO; the hosted product source is not included. |
 | 2026-09-02 | [SafeEvolve](https://github.com/MaoPopovich/SafeEvolve) | ![Stars](https://img.shields.io/github/stars/MaoPopovich/SafeEvolve?style=flat-square) | Safety-harness and policy co-evolution; training scripts and compact assets. |

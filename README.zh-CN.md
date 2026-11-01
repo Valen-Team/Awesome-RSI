@@ -119,6 +119,7 @@
 
 | 参考日期 | 项目 | Stars | 可查看的内容 |
 |---|---|---|---|
+| 2026-10-31，v0.2.4 发布 | [agent-qa](https://vostride.com) | ![Stars](https://img.shields.io/github/stars/vostride/agent-qa?style=flat-square) | 将经过证据门控的 memidex 事实与流程保留至后续网页和移动端测试；在本地晋升记录，并可选用回放与在线金丝雀检查。[代码](https://github.com/vostride/agent-qa) · [学习循环](https://vostride.com/docs/agent-qa/self-improvement)；采用 FSL-1.1-ALv2，不训练模型或改写自身代码。 |
 | 2026-10-13，论文 | [EmbodiedEvo](https://github.com/Einsia/EmbodiedEvo) | ![Stars](https://img.shields.io/github/stars/Einsia/EmbodiedEvo?style=flat-square) | 机器人控制代码、可复用技能与经验，以及分开的练习和测试场景；需自行配置模拟器。 |
 | 2026-09-15，论文 | [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) | ![Stars](https://img.shields.io/github/stars/Gen-Verse/ScienceBuddy?style=flat-square) | 交替执行 harness 搜索与 GRPO 的简化科研智能体实验；不包含在线产品的完整源码。 |
 | 2026-09-02 | [SafeEvolve](https://github.com/MaoPopovich/SafeEvolve) | ![Stars](https://img.shields.io/github/stars/MaoPopovich/SafeEvolve?style=flat-square) | 安全 harness 与策略的共同演化，附训练脚本和小规模实验资源。 |
