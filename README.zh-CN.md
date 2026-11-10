@@ -49,6 +49,7 @@
 | 2026-09-08 | [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](https://arxiv.org/abs/2609.08228) | 从执行轨迹更新技能图的拓扑、边权和检索描述，模型、技能内容与检索算法保持不变。 | 📄 论文 |
 | 2026-08-25 | [Recuris: Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](https://arxiv.org/abs/2608.24876) | 利用经过验证的状态和结构化失败反馈，更新工作记忆与经验技能；基础模型和外层元智能体保持不变。 | [💻 代码](https://github.com/Gen-Verse/Recuris) |
 | 2026-08-15 | [Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents](https://arxiv.org/abs/2608.15071) | 围绕固定的任务求解器，把执行上下文编译成可复用的跨任务技能和任务类型技能。 | [💻 代码与技能](https://github.com/A-EVO-Lab/a-evolve/tree/release/evo-harness) |
+| 2026-05-28 | [Learning from Repair Experience: Self-Evolving Agents for Automated Vulnerability Repair](https://arxiv.org/abs/2605.30105) | EvoRepair 从漏洞修复轨迹中提取经验，按质量评分存入经验库，再检索这些经验指导后续修复；模型权重保持不变。 | [💻 代码](https://github.com/iSEngLab/Learn-from-Repair-Experience) |
 | 2026-03-19 | [Memento-Skills: Let Agents Design Agents](https://arxiv.org/abs/2603.18743) | 通过反思学习积累可复用的 Markdown 技能，基础模型保持固定，技能路由器通过学习获得。 | [💻 代码](https://github.com/Memento-Teams/Memento-Skills) |
 | 2025-10-06 | [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618) | 通过生成、反思和增量整理，持续更新上下文中的操作手册。 | [💻 代码](https://github.com/ace-agent/ace) |
 | 2025-07-25 | [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457) | 根据执行反馈和反思改进提示词，选出能力互补的候选方案。 | [💻 代码](https://github.com/gepa-ai/gepa) |
