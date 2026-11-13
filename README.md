@@ -11,7 +11,7 @@ Papers, code, benchmarks, and models for AI systems that retain experience, revi
 [English](README.md) · [简体中文](README.zh-CN.md)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Updated](https://img.shields.io/badge/Updated-2026--10--20-2563eb?style=flat-square)
+![Updated](https://img.shields.io/badge/Updated-2026--11--13-2563eb?style=flat-square)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-16a34a?style=flat-square)](#contributing)
 
 [📄 Papers](#papers) · [🛠️ Projects](#projects) · [📊 Benchmarks, Evaluation & Datasets](#benchmarks)
