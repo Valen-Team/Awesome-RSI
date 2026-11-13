@@ -45,6 +45,7 @@ Improvement through reusable prompts, context, skills, and memory.
 
 | Date | Paper | Core idea | Resources |
 |---|---|---|---|
+| 2026-11-07 | [Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction](https://arxiv.org/abs/2611.10439) | MixUA distills trajectories from many users and heterogeneous agents into lessons, each scoped to a user-agent pair, user, agent, or global memory, so lessons transfer without leaking private facts; model weights stay fixed. | 📄 Paper |
 | 2026-10-13 | [EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](https://arxiv.org/abs/2610.18867) | Distills robot interaction into code skills and written lessons, then freezes them for fresh agents in unseen scenes; model weights stay fixed. | [💻 Code](https://github.com/Einsia/EmbodiedEvo) |
 | 2026-09-08 | [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](https://arxiv.org/abs/2609.08228) | Updates skill-graph topology, edge weights, and retrieval descriptions from execution traces while keeping the model, skill content, and retrieval algorithm fixed. | 📄 Paper |
 | 2026-08-25 | [Recuris: Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](https://arxiv.org/abs/2608.24876) | Evolves working memory and experiential skills using verified state and structured failure feedback; the base LLM and outer meta-agent stay fixed. | [💻 Code](https://github.com/Gen-Verse/Recuris) |

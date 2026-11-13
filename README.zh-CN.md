@@ -45,6 +45,7 @@
 
 | 日期 | 论文 | 主要方法 | 资源 |
 |---|---|---|---|
+| 2026-11-07 | [Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction](https://arxiv.org/abs/2611.10439) | MixUA 把多个用户与异构智能体的轨迹提炼为经验，并为每条经验分配作用范围（用户-智能体对、用户、智能体或全局），使经验可以跨用户和智能体迁移，同时避免泄露隐私信息；模型权重保持不变。 | 📄 论文 |
 | 2026-10-13 | [EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence](https://arxiv.org/abs/2610.18867) | 把机器人交互经验整理成代码技能和文字经验，再冻结这些内容，交给未见场景中的新智能体使用；模型权重保持不变。 | [💻 代码](https://github.com/Einsia/EmbodiedEvo) |
 | 2026-09-08 | [SE-GoS: Self-Evolving Graph-of-Skills for Skill Library at Scale](https://arxiv.org/abs/2609.08228) | 从执行轨迹更新技能图的拓扑、边权和检索描述，模型、技能内容与检索算法保持不变。 | 📄 论文 |
 | 2026-08-25 | [Recuris: Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses](https://arxiv.org/abs/2608.24876) | 利用经过验证的状态和结构化失败反馈，更新工作记忆与经验技能；基础模型和外层元智能体保持不变。 | [💻 代码](https://github.com/Gen-Verse/Recuris) |
